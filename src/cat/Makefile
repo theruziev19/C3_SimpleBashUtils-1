@@ -14,7 +14,7 @@ test:
 	./test.sh
 
 format:
-	@$(CLANG_FORMAT) -i $(FORMAT_FILES)
+	@$(CLANG_FORMAT) -n $(FORMAT_FILES)
 
 clean:
 	rm -rf s21_cat

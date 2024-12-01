@@ -25,4 +25,4 @@ void print_only_matches(use_flags *flags, regex_t *compiled, char *filename,
 void print_result(use_flags *flags, char *filename, int count_files,
                   int line_num, char *line);
 
-#endif // S21_GREP_H
+#endif  // S21_GREP_H

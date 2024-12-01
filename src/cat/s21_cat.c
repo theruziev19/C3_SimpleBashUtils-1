@@ -10,36 +10,36 @@ void parseOptions(int argc, char *argv[], opt *options) {
   while ((currentFlags =
               getopt_long(argc, argv, "+nbsetTvE", long_options, NULL)) != -1) {
     switch (currentFlags) {
-    case 'n':
-      options->n = 1;
-      break;
-    case 'b':
-      options->b = 1;
-      options->n = 0;
-      break;
-    case 's':
-      options->s = 1;
-      break;
-    case 'e':
-      options->e = 1;
-      options->v = 1;
-      break;
-    case 't':
-      options->t = 1;
-      options->v = 1;
-      break;
-    case 'v':
-      options->v = 1;
-      break;
-    case 'T':
-      options->t = 1;
-      break;
-    case 'E':
-      options->e = 1;
-      break;
-    default:
-      printf("cat: wrong option!");
-      break;
+      case 'n':
+        options->n = 1;
+        break;
+      case 'b':
+        options->b = 1;
+        options->n = 0;
+        break;
+      case 's':
+        options->s = 1;
+        break;
+      case 'e':
+        options->e = 1;
+        options->v = 1;
+        break;
+      case 't':
+        options->t = 1;
+        options->v = 1;
+        break;
+      case 'v':
+        options->v = 1;
+        break;
+      case 'T':
+        options->t = 1;
+        break;
+      case 'E':
+        options->e = 1;
+        break;
+      default:
+        printf("cat: wrong option!");
+        break;
     }
   }
 }
